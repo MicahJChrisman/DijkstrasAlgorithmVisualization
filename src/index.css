@@ -1,13 +1,91 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font: 20px "Century Gothic", Futura, sans-serif;
+  margin: 20px;
+  background-color: #ECECEA;
+}
+
+ol, ul {
+  padding-left: 30px;
+}
+
+.rowa{
+  display: inline-flex;
+  align-items: center;
+  margin-block: 10px;
+}
+
+
+.row:after {
+  clear: both;
+  content: "";
+  display: table;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.column{
+  float: left;
+  width: 650px;
+}
+
+.startButton{
+  background-color: cornsilk;
+  width: 100px;
+  margin-block: 20px;
+  margin-right: 20px;
+  padding: 20px;
+  border-radius: 5px;
+  font: 20px "Century Gothic";
+}
+
+.square {
+  background: transparent;
+  border: 1px solid black;
+  float: left;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 34px;
+  height: 60px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 60px;
+}
+
+.squareLegend {
+  background: transparent;
+  border: 1px solid black;
+  float: left;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 34px;
+  height: 60px;
+  margin-right: 10px;
+  width: 60px;
+}
+
+
+
+.lightSquare{
+  background-color: rgb(0, 255, 0);
+}
+
+.darkSquare{
+  background-color: rgb(255, 0, 0);
+}
+
+.wallSquare{
+  background-image: url("wall.png");
+}
+
+.whiteSquare{
+  background-color: rgb(255, 255, 255);
+}
+
+.blackSquare{
+  background-color:rgb(0, 0, 0)
 }
